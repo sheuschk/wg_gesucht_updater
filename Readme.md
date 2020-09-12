@@ -2,13 +2,16 @@
 This application is designed to update all active offers on www.wg-gesucht.de/ .
 
 ## Function
-The application is ready to use as executable .exe file. It is recommended to use the update.sh script. 
+The application is ready to use on windows as executable .exe file. It is recommended to use the update.sh script. 
 The parameters for the .exe file needs to be given correctly.  
 ``build/exe.win32-3.8/main.exe --mail <your.mail@adresse.com> --pw <your_pw>``  
 or shorter  
 ``build/exe.win32-3.8/main.exe -m <your.mail@adresse.com> -pw <your_pw>``  
 A description of the parameters with:  
-``build/exe.win32-3.8/main.exe --help``
+``build/exe.win32-3.8/main.exe --help``  
+
+If you use Linux or Mac you may need to create a new executable with the commands below. cx_freeze executables
+ only work on the os they are created.
 
 For faster use, create a shortlink to the update.sh on your desktop, so one click will be enough to update all offers.
 After the script finished a bash shell stays open for 30 seconds and shows the output of the script.
