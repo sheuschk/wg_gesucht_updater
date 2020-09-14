@@ -86,11 +86,11 @@ def update_all_offers(driver):
         offer_class = offer.get_attribute("class")
         raw_id = offer.get_property('id')
         if 'list-group-item-deactivated' in offer_class:
-            sys.stdout.write(f"Offer: {raw_id[3:]} is deactivated")
+            sys.stdout.write(f"Offer: {raw_id[3:]} is deactivated\n")
         else:
             offers_ids.append(raw_id[3:])
 
-    for index, offer in enumerate(offers):
+    for index, offer in enumerate(offers_ids):
         update_offer(driver, offers_ids, index)
 
 
