@@ -66,7 +66,7 @@ def login(driver, wait, args):
     try:
         wait.until(EC.visibility_of_element_located((By.CLASS_NAME, 'profile_image_menu')))
     except TimeoutException:
-        sys.stdout.write('Credentials were wrong\n')
+        sys.stdout.write('Credentials were wrong or server is not responding\n')
         exit()
 
     sys.stdout.write('Logged in\n')
